@@ -1,0 +1,7 @@
+# assuming redis is running in standalone mode on port: 6379
+# spring boot framework would create @Bean of ReactiveRedisConnectionFactory
+# we can @Autowired the @Bean of ReactiveRedisConnectionFactory in our @Configuration class
+server.port: 1003
+spring:
+  session:
+    store-type: redis
